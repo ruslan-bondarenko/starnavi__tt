@@ -18,7 +18,12 @@ import ReactFlow, {
   Edge,
 } from "reactflow";
 import "reactflow/dist/style.css";
-import { IStarship, generateRandomNumber, getIdFromUrl } from "@/shared";
+import {
+  ISelectedCharacter,
+  IStarship,
+  generateRandomNumber,
+  getIdFromUrl,
+} from "@/shared";
 
 const CharacterInfo: FC<Props> = ({ id }) => {
   const dispatch = useDispatch();
@@ -54,7 +59,7 @@ const CharacterInfo: FC<Props> = ({ id }) => {
         (starshipId: number, index: number) => {
           const currentStarship = selectedCharacter.starships.find(
             (starship) => {
-              return Number(getIdFromUrl(starship.url)) === starshipId;
+              return Number(getIdFromUrl(starship?.url || "")) === starshipId;
             }
           );
           return {

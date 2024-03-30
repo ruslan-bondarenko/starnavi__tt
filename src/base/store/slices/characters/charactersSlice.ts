@@ -17,10 +17,10 @@ const FETCH_URL = 'https://sw-api.starnavi.io/'
 
 const initialState: CharactersStateType= {
   data: {
-    count: 0,
-    results: [],
     previous: null,
     next: null,
+    count: 0,
+    results: [],
   },
   isLoading: false,
   error: undefined,
@@ -60,7 +60,7 @@ export const fetchCharacterById = createAsyncThunk(
 
       const filmIds = selectedCharacterInfo.films;
       // using '__in' for multiple values
-      const filmsData = await fetch(`${FETCH_URL}/films/?episode_id__in=${filmIds.join(',')}`).then((res) => {
+      const filmsData = await fetch(`${FETCH_URL}/films/?episode_id__in=${filmIds?.join(',')}`).then((res) => {
         if (!res.ok) {
           throw new Error("Server Error!");
         }
@@ -84,7 +84,7 @@ export const fetchCharacterById = createAsyncThunk(
       if (error instanceof Error) {
         return rejectWithValue(error.message);
       } else {
-        return rejectWithValue("An unknown error occurred");
+        return rejectWithValue("Server Error!");
       }
     }
   }
@@ -106,7 +106,7 @@ export const charactersSlice = createSlice({
     builder.addCase(fetchCharacters.rejected, (state, action) => {
       state.isLoading = false;
       state.data = { count: 0, results: [], previous: null, next: null };
-      state.error = action.error.message;
+      state.error = action.payload as string | undefined;
     });
     builder.addCase(fetchCharacterById.pending, (state) => {
       state.isLoading = true;
@@ -119,7 +119,7 @@ export const charactersSlice = createSlice({
     builder.addCase(fetchCharacterById.rejected, (state, action) => {
       state.isLoading = false;
       state.selectedCharacter = null;
-      state.error = action.error.message;
+      state.error = action.payload as string | undefined;
     });
   },
 });

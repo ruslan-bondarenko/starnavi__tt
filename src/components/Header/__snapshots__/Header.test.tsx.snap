@@ -1,0 +1,244 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component Header snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body
+    style="overflow: hidden;"
+  >
+    <div>
+      <header
+        class="bg-black w-full flex items-center px-10 py-3 flex items-center justify-between"
+      >
+        <a
+          class="flex items-center justify-center w-24 text-gray-100 hover:text-tone-700 invert"
+          href="/"
+        >
+          <img
+            alt="logo"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+            srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+            style="color: transparent;"
+            width="40"
+          />
+        </a>
+        <ul
+          class="hidden sm:flex items-center gap-4 text-sm text-gray-100 text-m"
+        >
+          <li
+            class="hover:text-tone-700 transition-all ease-linear"
+          >
+            <a
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+        </ul>
+        <div
+          class="sm:hidden relative w-fit h-full shrink-0 flex items-center"
+        >
+          <button
+            aria-label="Burger"
+            class="group flex h-10 w-10 items-center justify-center group-hover:pointer-events-none"
+            type="button"
+          >
+            <div
+              class="flex h-5 w-5 flex-col gap-1 items-center justify-center gap-0"
+            >
+              <div
+                class="ease h-0.5 w-5 transform rounded-full bg-gray-100 transition duration-300 rotate-45 translate-y-[3px]"
+              />
+              <div
+                class="ease h-0.5 w-5 transform rounded-full bg-gray-100 transition duration-300 -rotate-45 -translate-y-[2.5px]"
+              />
+            </div>
+          </button>
+          <div
+            class="w-full h-full border-t border-black border-opacity-20 overflow-y-auto md:rem:px-[60px] pt-6 md:pt-8 pb-10 md:rem:h-[440px] fixed top-16 bg-black z-10 left-0 bottom-0 w-screen translate-x-[110%] transition-all ease-linear !translate-x-0"
+          >
+            <div
+              class="p-10 flex flex-col gap-30"
+            >
+              <ul
+                class="hidden sm:flex items-center gap-4 text-sm text-gray-100 text-m !flex !flex-col !items-start !text-3xl"
+              >
+                <li
+                  class="hover:text-tone-700 transition-all ease-linear"
+                >
+                  <a
+                    href="/"
+                  >
+                    Home
+                  </a>
+                </li>
+              </ul>
+              <button
+                class="flex rem:min-h-[32px] md:rem:min-h-[40px] gap-3 items-center justify-center transition-all duration-300 disabled:opacity-20 bg-white hover:bg-gray-200 px-3 md:px-4 flex h-10 w-40"
+                href=""
+                target="_self"
+              >
+                <span
+                  class="text-xs md:text-s font-medium shrink-0"
+                >
+                  <span
+                    class="text-l font-normal"
+                  >
+                    Book a call
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="bg-black w-full flex items-center px-10 py-3 flex items-center justify-between"
+    >
+      <a
+        class="flex items-center justify-center w-24 text-gray-100 hover:text-tone-700 invert"
+        href="/"
+      >
+        <img
+          alt="logo"
+          data-nimg="1"
+          decoding="async"
+          height="40"
+          loading="lazy"
+          src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+          srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+          style="color: transparent;"
+          width="40"
+        />
+      </a>
+      <ul
+        class="hidden sm:flex items-center gap-4 text-sm text-gray-100 text-m"
+      >
+        <li
+          class="hover:text-tone-700 transition-all ease-linear"
+        >
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+      </ul>
+      <div
+        class="sm:hidden relative w-fit h-full shrink-0 flex items-center"
+      >
+        <button
+          aria-label="Burger"
+          class="group flex h-10 w-10 items-center justify-center group-hover:pointer-events-none"
+          type="button"
+        >
+          <div
+            class="flex h-5 w-5 flex-col gap-1 items-center justify-center gap-0"
+          >
+            <div
+              class="ease h-0.5 w-5 transform rounded-full bg-gray-100 transition duration-300 rotate-45 translate-y-[3px]"
+            />
+            <div
+              class="ease h-0.5 w-5 transform rounded-full bg-gray-100 transition duration-300 -rotate-45 -translate-y-[2.5px]"
+            />
+          </div>
+        </button>
+        <div
+          class="w-full h-full border-t border-black border-opacity-20 overflow-y-auto md:rem:px-[60px] pt-6 md:pt-8 pb-10 md:rem:h-[440px] fixed top-16 bg-black z-10 left-0 bottom-0 w-screen translate-x-[110%] transition-all ease-linear !translate-x-0"
+        >
+          <div
+            class="p-10 flex flex-col gap-30"
+          >
+            <ul
+              class="hidden sm:flex items-center gap-4 text-sm text-gray-100 text-m !flex !flex-col !items-start !text-3xl"
+            >
+              <li
+                class="hover:text-tone-700 transition-all ease-linear"
+              >
+                <a
+                  href="/"
+                >
+                  Home
+                </a>
+              </li>
+            </ul>
+            <button
+              class="flex rem:min-h-[32px] md:rem:min-h-[40px] gap-3 items-center justify-center transition-all duration-300 disabled:opacity-20 bg-white hover:bg-gray-200 px-3 md:px-4 flex h-10 w-40"
+              href=""
+              target="_self"
+            >
+              <span
+                class="text-xs md:text-s font-medium shrink-0"
+              >
+                <span
+                  class="text-l font-normal"
+                >
+                  Book a call
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

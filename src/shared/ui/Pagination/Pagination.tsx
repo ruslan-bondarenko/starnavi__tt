@@ -6,10 +6,7 @@ import { Button, ButtonVariantEnum } from "../Button";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState, fetchCharacters } from "@/base/store";
 
-type Props = {
-  // next: null | string;
-  // previous: null | string;
-};
+type Props = {};
 
 const Pagination: FC<Props> = () => {
   const dispatch = useDispatch();

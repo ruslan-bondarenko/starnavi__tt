@@ -11,7 +11,6 @@
     "skipLibCheck": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@mock-tool/*": ["./mock-tool/*"]
     },
     "allowJs": true,
     "noEmit": true,
@@ -24,6 +23,7 @@
       }
     ],
   },
+  "types": ["node", "jest", "@testing-library/jest-dom"],
   "exclude": ["node_modules"],
   "include": [
     "next-env.d.ts",

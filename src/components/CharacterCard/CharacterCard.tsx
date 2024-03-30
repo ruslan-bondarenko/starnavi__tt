@@ -10,7 +10,7 @@ type Props = {
 
 const ProductItem: FC<Props> = ({ character }) => {
   return (
-    <Link href={`/people/${getIdFromUrl(character.url)}`}>
+    <Link href={`/people/${getIdFromUrl(character?.url || "")}`}>
       <h4 className="px-4 py-3 text-l font-medium truncate">
         {character?.name}
       </h4>
